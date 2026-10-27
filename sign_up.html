@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — Biography</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="auth_body">
+
+    <nav id="nav" class="auth_nav">
+        <div id="main-nav">
+            <button class="nav_button"><a href="./main.html">Biography</a></button>
+            <button class="nav_button"><a href="#">Stories</a></button>
+        </div>
+        <div id="register_buttons">
+            <button class="nav_button"><a href="./sign_in.html">Sign in</a></button>
+            <button class="nav_button"><a href="./sign_up.html">Sign up</a></button>
+        </div>
+    </nav>
+
+    <main class="auth_main">
+        <div class="auth_wrapper auth_wrapper_wide">
+
+            <form class="auth_card auth_card_wide" action="/register" method="POST" novalidate>
+                <h2 class="auth_title">Create Account</h2>
+                <p class="auth_subtitle">Join us to follow Diana's story and legacy.</p>
+                <div class="photo_upload_wrap">
+                    <label for="profile_photo" class="photo_upload">
+                        <i class="fa-solid fa-camera photo_icon" id="photo_icon"></i>
+                    </label>
+                    <input type="file" id="profile_photo" name="profile_photo" accept="image/*" hidden>
+                    <span class="photo_hint">Upload profile photo</span>
+                </div>
+
+                <div class="form_grid_2">
+                    <div class="form-group">
+                        <input type="text" id="first_name" name="first_name" placeholder="First name" pattern="[A-Za-z\u0400-\u04FF\s]{2,30}" required>
+                        <i class="fa-solid fa-check icon_valid"></i>
+                        <i class="fa-solid fa-xmark icon_invalid"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="last_name" name="last_name" placeholder="Last name" pattern="[A-Za-z\u0400-\u04FF\s]{2,30}" required>
+                        <i class="fa-solid fa-check icon_valid"></i>
+                        <i class="fa-solid fa-xmark icon_invalid"></i>
+                    </div>
+                </div>
+
+                <div class="field_block">
+                    <span class="field_label">Gender</span>
+                    <div class="gender_group">
+                        <label class="gender_pill">
+                            <input type="radio" name="gender" value="female" class="gender_checkbox" required>
+                            <i class="fa-solid fa-venus"></i> Female
+                        </label>
+                        <label class="gender_pill">
+                            <input type="radio" name="gender" value="male" class="gender_checkbox">
+                            <i class="fa-solid fa-mars"></i> Male
+                        </label>
+                        <label class="gender_pill">
+                            <input type="radio" name="gender" value="other" class="gender_checkbox">
+                            <i class="fa-solid fa-venus-mars"></i> Other
+                        </label>
+                    </div>
+                </div>
+                <div class="form_grid_2">
+                    <div class="form-group">
+                        <input type="date" id="birth_date" name="birth_date" placeholder="Date of birth" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="age" name="age" placeholder="Age" min="13" max="90" step="1" required>
+                    </div>
+                    <div class="form-group select-group">
+                        <select id="country" name="country" required>
+                            <option value="" disabled selected>Country</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="DE">Germany</option>
+                            <option value="FR">France</option>
+                            <option value="PL">Poland</option>
+                            <option value="CA">Canada</option>
+                            <option value="IT">Italy</option>
+                            <option value="ES">Spain</option>
+                            <option value="OT">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="^\+?[0-9\s\-]{7,15}$" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="social_tag" name="social_tag" placeholder="Social media tag"
+                        pattern="[A-Za-z0-9_]{3,20}" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="signup_email" name="email" placeholder="Email address" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="signup_password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[A-Za-z]).{8,}" title="At least 8 characters, including a letter and a number" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+
+                <label class="checkbox_label terms_label">
+                    <input type="checkbox" name="terms" required>
+                    I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>
+                </label>
+
+                <button type="submit" class="auth_button">Sign Up</button>
+
+                <p class="auth_switch">Already have an account? <a href="./sign_in.html">Sign in</a></p>
+            </form>
+
+        </div>
+    </main>
+</body>
+</html>

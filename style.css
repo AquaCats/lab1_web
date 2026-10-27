@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=TASA+Explorer:wght@400..800&family=Tangerine:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "STIX Two Text", serif;
+    font-size: 17px;
+}
+
+small{
+    text-align: center;
+    color: #B30000;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Quicksand", sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+#childhood i{
+    font-family: "STIX Two Text", serif;
+    color: #B30000;
+}
+
+#nav{
+    background: transparent;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10; 
+}
+
+.nav_button{
+    height: 45px;
+    width: 120px;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.nav_button:hover{
+    background-color: #D9D9D9;
+    color: #B30000;
+}
+
+.search_button, #search-button {
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+.search_container{
+    height: 40px;
+    width: 450px;
+    padding: 5px;
+}
+
+.search_bar {
+    width: 400px;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: "Quicksand", sans-serif;
+}
+
+.search_bar::placeholder {
+  color: white;
+}
+
+#banner {
+    height: 100vh;
+    display: flex;
+    background: radial-gradient(ellipse at 30% 50%, rgba(179, 0, 0, 0.3) 0%, transparent 60%), linear-gradient(135deg, #0B0B0B 0%, #5c0000 25%, #B30000 60%, #7a0000 100%);
+}
+
+h1{
+    color: white;
+    font-size: 120px;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+}
+
+#description{
+    width: 650px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+}
+
+#read_more{
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #B30000;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+#watch_vid {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: 2px solid white;
+    background: none;
+    color: white;
+}
+
+#arrow_icon{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#read_more:hover{
+    border: 2px solid white;
+    background: none;
+    color: white;
+}
+
+#watch_vid:hover{
+    border: none;
+    background: white;
+    color: #B30000;
+}
+
+#prencess_diana_photo{
+    height: 100vh;
+}
+
+#text_banner {
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+#text_content {
+    margin-top: 175px;
+    margin-left: 100px;
+}
+
+#photo_banner {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+#photo_banner > img {
+    width: 100%;
+    height: 170px;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.aside-trigger {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  font-size: 24px;
+  border-radius: 5px 0 0 5px;
+  transition: all 0.3s ease;
+}
+
+.aside-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: black;
+  z-index: 15;
+  padding: 40px 20px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.nav-checkbox:checked ~ .aside-trigger {
+  right: 250px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.nav-checkbox:checked ~ .aside-nav {
+  transform: translateX(0);
+}
+
+.aside-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aside-nav li {
+  margin-bottom: 20px;
+}
+
+.aside-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: color 0.2s;
+}
+
+.aside-nav a:hover {
+  color: #B30000;
+}
+
+#childhood{
+    height: 100vh;
+    padding: 50px;
+}
+
+h2{
+    color: white;
+    font-family: "TASA Explorer", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h3{
+    color: #B30000;
+    font-family: "TASA Explorer", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin-left: 0;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+h3::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #B30000;
+    margin-top: 12px;
+    border-radius: 2px;
+}
+
+#section_title{
+    margin-top: 40px;
+    background: #B30000;
+    height: 100px;
+}
+
+#childhood_content{
+    display: flex;
+    border: 2px solid #B30000;
+    padding: 40px;
+}
+
+#parents_photo>figure>img{
+    height: calc(100vh - 300px);
+    margin-right: 10px;
+}
+
+figcaption{
+    font-family: "STIX Two Text", serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #B30000;
+    margin-top: 14px;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+#parents_photo{
+    display: flex;
+    position: absolute;
+    right: 70px;
+}
+
+#education, #childhood{
+    padding: 20px 40px;
+    background: #FAF7F5;
+}
+
+#text_parents>p{
+    width: 350px;
+}
+
+#education_content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.education_block{
+    width: 380px;
+    background: white;
+    border: none;
+    border-top: 5px solid #B30000;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 25px;
+}
+
+.education_block:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(179, 0, 0, 0.15);
+}
+
+.education_block >figure{
+    margin: 0;
+}
+
+.education_block>figure>img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.education_p{
+    padding: 0 25px;
+}
+
+.education_p>p{
+    width: auto;
+    font-family: "STIX Two Text", serif;
+    margin: 15px 0 0 0;
+    text-align: justify;
+    color: #333;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+#hero_charles{
+    height: 100vh;
+    background-image: url(./image/charles1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+}
+
+#hero_charles_text{
+
+    padding-left: 25px;
+    border-left: 8px solid #B30000;
+    height: 288px;
+    width: 600px;
+}
+
+#hero_charles_text>h1{
+    background: #B30000;
+    font-family: "TASA Explorer", sans-serif;
+    display: inline-block; 
+}
+
+#table{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text_table{
+    padding: 20px 40px 20px 40px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 6px 16px rgba(179, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+th, td {
+    font-family: "Quicksand", sans-serif;
+    padding: 12px;
+    text-align: center;
+    border-left: 1px solid rgb(153, 153, 153);
+    border-right: 1px solid rgb(153, 153, 153);
+}
+
+th:first-child, td:first-child {
+  border-left: none;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+th {
+    background-color: #B30000;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgba(230, 151, 151, 0.5);
+}
+
+.img_table{
+    max-height: 40px;
+    max-width: 100px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background: radial-gradient(circle at 15% 15%, #710101 0%, #0B0B0B 100%), linear-gradient(90deg, #0B0B0B 0%, #1a1a1a 100%);
+    background-blend-mode: screen;
+    color: #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    font-family: "Quicksand", sans-serif;
+}
+
+h4{
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+}
+
+footer div{
+    max-width: 400px;
+}
+
+footer p{
+    font-family: "Quicksand", sans-serif;
+    margin-top:10px;
+}
+
+footer i{
+    margin-top: 10px;
+    margin-right: 5px;
+}

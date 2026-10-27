@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In — Diana, Princess of Wales</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="auth_body">
+
+    <nav id="nav" class="auth_nav">
+        <div id="main-nav">
+            <button class="nav_button"><a href="./main.html">Biography</a></button>
+            <button class="nav_button"><a href="#">Stories</a></button>
+        </div>
+        <div id="register_buttons">
+            <button class="nav_button"><a href="./sign_in.html">Sign in</a></button>
+            <button class="nav_button"><a href="./sign_up.html">Sign up</a></button>
+        </div>
+    </nav>
+
+    <main class="auth_main">
+        <div class="auth_wrapper">
+
+            <form class="auth_card" action="/login" method="POST" novalidate>
+                <h2 class="auth_title">Welcome Back</h2>
+                <p class="auth_subtitle">Sign in to continue exploring Diana's story.</p>
+
+                <div class="form-group">
+                    <input type="email" id="login_email" name="email" placeholder="Email address" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="login_password" name="password" placeholder="Password" minlength="8" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+
+                <div class="form_row">
+                    <label class="checkbox_label">
+                        <input type="checkbox" name="remember">Remember me
+                    </label>
+                    <label href="#" class="forgot_link">Forgot password?</label>
+                </div>
+
+                <button type="submit" class="auth_button">Sign In</button>
+
+                <p class="auth_switch">Don't have an account? <a href="./sign_up.html">Sign up</a></p>
+            </form>
+
+            <aside class="fact_box">
+                <i class="fa-solid fa-quote-left fact_icon"></i>
+                <p class="fact_text">«I do things differently, because I don’t go by a rule book, because I lead from the heart, not the head»</p>
+                <span class="fact_author">— Diana, Princess of Wales</span>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
