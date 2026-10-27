@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Biography</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="auth_body">
+
+    <nav id="nav" class="auth_nav">
+        <div id="main-nav">
+            <button class="nav_button"><a href="./main.html">Biography</a></button>
+            <button class="nav_button"><a href="./contact.html">Contact</a></button>
+        </div>
+        <div id="register_buttons">
+            <button class="nav_button"><a href="./sign_in.html">Sign in</a></button>
+            <button class="nav_button"><a href="./sign_up.html">Sign up</a></button>
+        </div>
+    </nav>
+
+    <main class="auth_main">
+        <div class="auth_wrapper auth_wrapper_wide">
+
+            <form class="auth_card auth_card_wide" action="/contact" method="POST" novalidate>
+                <h2 class="auth_title">Get in Touch</h2>
+                <p class="auth_subtitle">Have a question or story to share? We'd love to hear from you.</p>
+
+                <div class="form-group">
+                    <input type="text" id="contact_name" name="name" placeholder="Full name" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="contact_email" name="email" placeholder="Email address" required>
+                    <i class="fa-solid fa-check icon_valid"></i>
+                    <i class="fa-solid fa-xmark icon_invalid"></i>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="contact_message" name="message" placeholder="Your message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="auth_button">Send Message</button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
